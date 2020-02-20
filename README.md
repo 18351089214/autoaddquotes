@@ -1,10 +1,10 @@
 # autoaddquotes
-###格式化请求头参数
+### 格式化请求头参数
 在写爬虫程序时，一般会直接从网页源码中把请求头复制到代码里，直接复制的文本一般不是我们要的格式，所以
 需要格式化一下，原始格式如下：
 
-####输入文本：
-'''
+#### 输入文本：
+```
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
@@ -14,10 +14,10 @@ Host: maoyan.com
 Referer: https://maoyan.com/board/4?offset=10
 Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
-'''
+```
 
-####输出结果：
-"""
+#### 输出结果：
+```
 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
 'Accept-Encoding': 'gzip, deflate, br',
 'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
@@ -27,4 +27,4 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (
 'Referer': 'https://maoyan.com/board/4?offset=10',
 'Upgrade-Insecure-Requests': '1',
 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
-"""
+```
